@@ -168,6 +168,8 @@ header h1 {
   background-repeat: no-repeat;
   background-position: 10px 10px;
   padding-left: 40px;
+  outline: none;
+  /* border: none; */
   /* position: absolute; */
   /* margin-left: 9px;
   margin-top: 4px; */
