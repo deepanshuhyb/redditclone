@@ -127,14 +127,14 @@ header h1 {
     width: 100%;
   }
 }
-.main{
+.navbar{
     display: grid;
     background-color: #0b1416;
-    height: 50px;
+    height: 60px;
     border-color: #021012;
     border-width: 5px;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
     /* justify-content: space-evenly; */
     width: 130%;
     overflow: hidden;
@@ -149,15 +149,31 @@ header h1 {
     margin-bottom: -50px;
     padding: 0px;
 }
-.forsearch{
-  border-width: 3px;
+/* .forsearch{
+  border-width: 1px;
   border-color:#ccc;
-  color: white;
-  height: 40px;
-  width: 200px;
-
-}
+  background-color: white;
+  border-radius: 20px;
+  height: 35px;
+  width: 650px;
+  border-style: solid;
+} */
 .search{
-  border: none;
-
+  width: 650px;
+  height: 38px;
+  border-radius: 45px;
+  border: 0px none;
+  background-image: url(images/search.svg);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding-left: 40px;
+  /* position: absolute; */
+  /* margin-left: 9px;
+  margin-top: 4px; */
+  /* background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;  */
 }
