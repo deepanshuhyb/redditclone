@@ -149,6 +149,15 @@ header h1 {
     margin-bottom: -50px;
     padding: 0px;
 }
+.forsearch{
+  border-width: 3px;
+  border-color:#ccc;
+  color: white;
+  height: 40px;
+  width: 200px;
+
+}
 .search{
-  /* position: relative; */
+  border: none;
+
 }
