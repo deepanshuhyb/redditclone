@@ -128,11 +128,27 @@ header h1 {
   }
 }
 .main{
-    display: flex;
+    display: grid;
+    background-color: #0b1416;
+    height: 50px;
+    border-color: #021012;
+    border-width: 5px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-evenly; */
+    width: 130%;
+    overflow: hidden;
+    position: fixed;
 }
 .logo a img{
-    height: 150px;
-    width: 150px;
-    margin-top: -40px;
-    margin-left: 20px;
+    height: 140px;
+    width: 140px;
+    margin: auto;
+    margin-top: -45px;
+    margin-left: 10px;
+    margin-bottom: -50px;
+    padding: 0px;
+}
+.search{
+  /* position: relative; */
 }
