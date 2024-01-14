@@ -131,12 +131,16 @@ header h1 {
     display: grid;
     background-color: #0b1416;
     height: 60px;
-    border-color: #021012;
-    border-width: 5px;
+    border-color: #f0fdff;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px;
     align-items: center;
     grid-template-columns: 22% 60% 18%;
     width: 100%;
     overflow: hidden;
+    border-style: solid;
     /* position: fixed; */
 }
 .logo a img{
@@ -146,11 +150,11 @@ header h1 {
     margin-top: -45px;
     margin-left: 10px;
     margin-bottom: -50px;
-    padding: 0px;
+    padding: 0px
 }
 .forsearch{
   border-width: 1px;
-  background-color: #1b2a2c;
+  background-color: #233538;
   border-radius: 20px;
   height: 40px;
   width: 750px;
@@ -172,11 +176,59 @@ header h1 {
   height: 100;
   border: 0px none;
   outline: none;
-  background-color: #1b2a2c;
+  background-color: #233538;
   left: 50px;
   top: 12px;
   color: white;
 }
+.nav-bt{
+  display: flex;
+  gap: 15px;
+}
 .btns{
-
+  height: 40px;
+  width: 70px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+}
+#btn1{
+  background-color: #233538; 
+  width: 90px;
+  /* align-items: center; */
+}
+#btn1:hover{
+  background-color: #4c615d87;
+}
+#btn2{
+  background-color: #D93A00;
+}
+#btn2:hover{
+  background-color: #d3633a;
+}
+#btn3{
+  width: 40px; 
+  background-color: #0b1416;
+}
+#btn3:hover{
+  background-color: rgb(29, 53, 59)
+}
+.page{
+  background-color: #0b1416;
+}
+.page{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.fh{
+  display: flex;
+  align-items: end;
+}
+.home p{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* position: relative; */
+  /* top: 30px;
+  left: 90px; */
 }
