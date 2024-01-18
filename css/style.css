@@ -191,17 +191,26 @@ header h1 {
   border-radius: 50px;
   border: none;
   color: #fff;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
+  /* text-indent: 5px; */
 }
 #btn1{
   background-color: #233538; 
   width: 90px;
-  /* align-items: center; */
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
 }
 #btn1:hover{
   background-color: #4c615d87;
 }
 #btn2{
   background-color: #D93A00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #btn2:hover{
   background-color: #d3633a;
@@ -209,25 +218,23 @@ header h1 {
 #btn3{
   width: 40px; 
   background-color: #0b1416;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #btn3:hover{
   background-color: rgb(29, 53, 59)
 }
 .page{
   background-color: #0b1416;
-}
-.page{
   display: grid;
   grid-template-columns: 20% 80%;
 }
 .fh{
   display: grid;
+  gap: 20px;
   justify-content: end;
   margin-top: 20px;
-}
-.home{
-  border-bottom: #ccc;
-  border-width: 1px;
 }
 .home button{
   display: flex;
@@ -249,7 +256,38 @@ header h1 {
   background-color: #354e53a5;
   border-radius: 10px;
 }
+.border{
+  width: 97%;
+  height: 1px;
+  background-color: #cccccc39;
+  margin-top: -12px;
+}
 .Topics{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-left: 12px;
+}
+button{
+  display: flex;
+  align-items: center;
+}
+.Topics button{
+  display: flex;
+  align-items: center;
+  background-color: #0b1416;
+  color: white;
+  border: 0px;
+  width: 190px;
+  height: 40px;
+  gap: 5px;
+  margin-right: 3px;
+  padding-left: 8px;
+  /* margin-left: 5px; */
+  /* margin-top: 30px; */
+  /* position: relative; */
+  /* top: 30px;
+  left: 90px; */
+}
+.Topics button:hover{
+  background-color: #354e53a5;
+  border-radius: 10px;
 }
