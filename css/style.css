@@ -38,7 +38,7 @@ header h1 {
 
 /* Form & Input */
 .form-input {
-  width: 100%;
+  max-width: 100%;
   font-size: 18px;
   margin-bottom: 20px;
   padding: 10px;
@@ -157,8 +157,9 @@ header h1 {
   background-color: #233538;
   border-radius: 20px;
   height: 40px;
-  width: 750px;
+  max-width: 750px;
   border-style: solid;
+  position: relative;
 }
 .fforsearch{
   position:relative;
@@ -172,8 +173,9 @@ header h1 {
 }
 .search{
   position: absolute;
-  width: 92%;
-  height: 100;
+  /* min-width: 650px; */
+  max-width: 690px;
+  height: 100fr;
   border: 0px none;
   outline: none;
   background-color: #233538;
@@ -370,12 +372,12 @@ button{
   background-color: #000000;
   color: white;
   border: 0px;
-  width: 290px;
+  width: 240px;
   /* padding-right: 10px; */
   padding-top: 18px;
   padding-bottom: 18px;
   gap: 5px;
-  margin-right: 3px;
+  /* margin-right: 3px; */
   padding-left: 8px;
   /* height: 40px; */
   /* margin-left: 5px; */
@@ -389,24 +391,40 @@ button{
   /* border-radius: 10px; */
 }
 .popcom{
+  position: relative;
   position: static;
   background-color: #000000;
   max-width: 22vw;
   display: grid;
+  /* height:inherit; */
   border-radius: 10px;
-  margin-top: 50px;
-  max-height: 50vh;
+  margin-top: 15px;
+  max-height: 60vh;
+  min-width: 240px;
 }
 .pop{
   padding: 15px;
   padding-top: 25px;
 }
 .popcon{
+  position: absolute;
   justify-self: center;
-  padding-bottom: 30px;
+  align-self: center;
+  /* padding-bottom: 30px; */
 }
-
-
+.sh{
+  display: grid;
+  grid-auto-flow: column;
+  /* max-width: 90vw; */
+}
 .posts{
-  max-width: 40vw;
+  /* max-width: 40vw; */
+  width: 35vw;
+  padding-left: 30px;
+  margin-top: 90px;
+}
+.sub{
+  display: flex;
+  gap: 9px;
+
 }
