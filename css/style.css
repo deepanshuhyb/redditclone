@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #0b1416;
 }
 
 header {
@@ -130,7 +130,7 @@ header h1 {
 .navbar{
     display: grid;
     background-color: #0b1416;
-    height: 60px;
+    height: 8.2vh;
     border-color: #f0fdff;
     border-top: 0px;
     border-right: 0px;
@@ -235,7 +235,15 @@ header h1 {
   gap: 20px;
   justify-content: end;
   margin-top: 20px;
+  max-height: 89.11vh;
+  max-width: 30vw;
+  overflow-y: overlay;
+  position: relative;
+  /* z-index: 1000; */
 }
+/* .fh:hover{
+  overflow-y:auto;
+} */
 .home button{
   display: flex;
   align-items: center;
@@ -319,6 +327,86 @@ button{
 .arrowdown{
   display: flex;
   width: 100%;
+  /* max-width: 90%; */
   justify-content: end;
   padding-right: 10px;
+}
+.popposts button{
+  display: flex;
+  align-items: center;
+  background-color: #0b1416;
+  color: white;
+  border: 0px;
+  width: 190px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 5px;
+  margin-right: 3px;
+  padding-left: 8px;
+  /* height: 40px; */
+  /* margin-left: 5px; */
+  /* margin-top: 30px; */
+  /* position: relative; */
+  /* top: 30px;
+  left: 90px; */
+}
+.popposts button:hover{
+  background-color: #354e53a5;
+  border-radius: 10px;
+}
+.footer{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.footer a{
+  color: #f0fdff88;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.popcom button{
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  border: 0px;
+  width: 290px;
+  /* padding-right: 10px; */
+  padding-top: 18px;
+  padding-bottom: 18px;
+  gap: 5px;
+  margin-right: 3px;
+  padding-left: 8px;
+  /* height: 40px; */
+  /* margin-left: 5px; */
+  /* margin-top: 30px; */
+  /* position: relative; */
+  /* top: 30px;
+  left: 90px; */
+}
+.popcom button:hover{
+  background-color: #354e53a5;
+  /* border-radius: 10px; */
+}
+.popcom{
+  position: static;
+  background-color: #000000;
+  max-width: 22vw;
+  display: grid;
+  border-radius: 10px;
+  margin-top: 50px;
+  max-height: 50vh;
+}
+.pop{
+  padding: 15px;
+  padding-top: 25px;
+}
+.popcon{
+  justify-self: center;
+  padding-bottom: 30px;
+}
+
+
+.posts{
+  max-width: 40vw;
 }
