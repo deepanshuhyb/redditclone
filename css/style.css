@@ -71,6 +71,7 @@ header h1 {
 
 .btn:hover {
   background-color: #444;
+  cursor: pointer;
 }
 
 .btn-link {
@@ -96,6 +97,8 @@ header h1 {
 
 .btn-clear:hover {
   background-color: #f1f1f1;
+  cursor: pointer;
+
 }
 
 .text-red {
@@ -207,6 +210,8 @@ header h1 {
 }
 #btn1:hover{
   background-color: #4c615d87;
+  cursor: pointer;
+
 }
 #btn2{
   background-color: #D93A00;
@@ -216,6 +221,8 @@ header h1 {
 }
 #btn2:hover{
   background-color: #d3633a;
+  cursor: pointer;
+
 }
 #btn3{
   width: 40px; 
@@ -225,12 +232,15 @@ header h1 {
   align-items: center;
 }
 #btn3:hover{
-  background-color: rgb(29, 53, 59)
+  background-color: rgb(29, 53, 59);
+  cursor: pointer;
+
 }
 .page{
   background-color: #0b1416;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% auto;
+  gap: 20px;
 }
 .fh{
   display: grid;
@@ -265,6 +275,8 @@ header h1 {
 .home button:hover{
   background-color: #354e53a5;
   border-radius: 10px;
+  cursor: pointer;
+
 }
 .border{
   width: 97%;
@@ -321,10 +333,14 @@ button{
 .resources button:hover{
   background-color: #354e53a5;
   border-radius: 10px;
+  cursor: pointer;
+
 }
 .Topics button:hover{
   background-color: #354e53a5;
   border-radius: 10px;
+  cursor: pointer;
+
 }
 .arrowdown{
   display: flex;
@@ -355,6 +371,8 @@ button{
 .popposts button:hover{
   background-color: #354e53a5;
   border-radius: 10px;
+  cursor: pointer;
+
 }
 .footer{
   padding-bottom: 20px;
@@ -368,7 +386,7 @@ button{
 
 .popcom button{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   background-color: #000000;
   color: white;
   border: 0px;
@@ -378,7 +396,7 @@ button{
   padding-bottom: 18px;
   gap: 5px;
   /* margin-right: 3px; */
-  padding-left: 8px;
+  padding-left: 10px;
   /* height: 40px; */
   /* margin-left: 5px; */
   /* margin-top: 30px; */
@@ -389,10 +407,12 @@ button{
 .popcom button:hover{
   background-color: #354e53a5;
   /* border-radius: 10px; */
+  cursor: pointer;
+
 }
 .popcom{
-  position: relative;
-  position: static;
+  /* position: relative; */
+  position: sticky;
   background-color: #000000;
   max-width: 22vw;
   display: grid;
@@ -401,6 +421,7 @@ button{
   margin-top: 15px;
   max-height: 60vh;
   min-width: 240px;
+  /* height: fit-content; */
 }
 .pop{
   padding: 15px;
@@ -419,12 +440,113 @@ button{
 }
 .posts{
   /* max-width: 40vw; */
-  width: 35vw;
-  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 45vw;
+  padding-left: 15px;
   margin-top: 90px;
+  height: fit-content;
+  padding-right: 15px;
+}
+.posts:hover{
+  background-color: #354e53a5;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.headerposts{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.subbtn{
+  display: flex;
+  align-items: center;
+
 }
 .sub{
   display: flex;
-  gap: 9px;
+  gap: 5px;
+  align-items: center;
+  /* justify-self: center; */
+}
 
+
+.dot{
+  background-color: rgba(255, 255, 255, 0.408);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  margin-top: 2px;
+  margin-left: 8px;
+}
+.time{
+  margin-left: 5px;
+  font-size: small;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.366);
+}
+#joinbtn{
+  background-color: #0045AC;
+  justify-content: center;
+  height: 30px;
+  width: 50px;
+  justify-self: end;
+}
+.joinbtn{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#joinbtn:hover{
+  background-color: #0064ac;
+  cursor: pointer;
+  
+}
+#btndot{
+  width: 30px;
+  height: 30px;
+  background-color: #354e53a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -5px;
+  position: relative;
+}
+#btndot:hover{
+  cursor: pointer;
+  background-color: rgba(106, 125, 130, 0.662);
+}
+#btndot b{
+  position: absolute;
+  top: 5px;
+}
+.titlepost h3{
+  color: white;
+  font-weight: 600;
+}
+.descriptionpost{
+  margin-top: 5px;
+  font-size: small;
+  color: rgba(255, 255, 255, 0.594);
+}
+.popcom{
+  margin-left: -100px;
+}
+.footerpost{
+  margin-top: 10px;
+}
+.vote{
+  /* margin-top: 5px; */
+  height: 30px;
+  background-color: #354e53a5;
+  width: 85px;
+  display: flex;
+  /* gap: 4px; */
+  border-radius: 15px;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  font-size: small;
+  justify-content: space-around;
 }
