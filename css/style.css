@@ -242,12 +242,16 @@ header h1 {
   grid-template-columns: 20% auto;
   gap: 20px;
 }
+body{
+  overflow-y:hidden
+}
 .fh{
   display: grid;
   gap: 20px;
   justify-content: end;
   margin-top: 20px;
   max-height: 89.11vh;
+  /* max-height:min-content; */
   max-width: 30vw;
   overflow-y: overlay;
   position: relative;
@@ -436,10 +440,16 @@ button{
 .sh{
   display: grid;
   grid-auto-flow: column;
+  overflow-y: scroll;
   /* max-width: 90vw; */
+}
+.allposts{
+  display: grid;
+  /* overflow-y: scroll; */
 }
 .posts{
   /* max-width: 40vw; */
+  /* display: grid; */
   padding-top: 10px;
   padding-bottom: 10px;
   width: 45vw;
@@ -470,8 +480,6 @@ button{
   align-items: center;
   /* justify-self: center; */
 }
-
-
 .dot{
   background-color: rgba(255, 255, 255, 0.408);
   height: 4px;
@@ -535,6 +543,8 @@ button{
 }
 .footerpost{
   margin-top: 10px;
+  display: flex;
+  gap: 10px;
 }
 .vote{
   /* margin-top: 5px; */
@@ -549,4 +559,42 @@ button{
   color: white;
   font-size: small;
   justify-content: space-around;
+}
+.comments{
+  height: 30px;
+  background-color: #354e53a5;
+  width: 55px;
+  display: flex;
+  gap: 4px;
+  border-radius: 15px;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  font-size: small;
+  justify-content: center;
+}
+.comments:hover{
+  background-color: #46656a;
+}
+.share{
+  height: 30px;
+  background-color: #354e53a5;
+  width: 75px;
+  display: flex;
+  gap: 4px;
+  border-radius: 15px;
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  font-size: small;
+  justify-content: center;
+}
+.share:hover{
+  background-color: #46656a;
+}
+.line{
+  width: 45vw;
+  background-color: #354e53a5;
+  height: 1px;
+  margin-top: 10px;
 }
