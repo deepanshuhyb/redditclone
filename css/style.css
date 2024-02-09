@@ -439,6 +439,7 @@ button{
 }
 .sh{
   display: grid;
+  max-height: 89.11vh;
   grid-auto-flow: column;
   overflow-y: scroll;
   /* max-width: 90vw; */
